@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RickAndMortyMauiApp"
+             x:Class="RickAndMortyMauiApp.MainPage"
+             Title="Rick &amp; Morty">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+
+        <Label Text="Ile postaci pobrać?" FontAttributes="Bold"/>
+        <Entry x:Name="entryCount" Placeholder="Np. 5" Keyboard="Numeric" />
+
+        <Button Text="Pobierz i zapisz do bazy" Clicked="OnDownloadClicked" />
+
+        <Button Text="Załaduj z bazy" Clicked="OnLoadFromDbClicked" />
+
+        <Label Text="Filtruj po Statusie lub Gatunku" FontAttributes="Bold" />
+        <Entry x:Name="filterEntry" Placeholder="Np. Alive, Human..." />
+
+        <Button Text="Filtruj" Clicked="OnFilterClicked" />
+
+        <Button Text="Usuń zaznaczoną postać" Clicked="OnDeleteClicked" BackgroundColor="DarkRed" TextColor="White"/>
+
+        <ListView x:Name="characterListView" ItemTapped="OnCharacterTapped"
+          HeightRequest="400">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" Detail="{Binding Species}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+    </VerticalStackLayout>
+</ContentPage>
+
