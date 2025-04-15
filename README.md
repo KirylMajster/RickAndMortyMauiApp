@@ -7,7 +7,9 @@ RickAndMortyMauiApp to aplikacja stworzona w technologii .NET MAUI umożliwiają
 - przeglądanie, filtrowanie oraz usuwanie postaci.
 
 Aplikacja wykorzystuje lokalną bazę danych zbudowaną z pomocą Entity Framework Core.
+
 Struktura bazy danych
+
 W aplikacji zaimplementowano trzy modele danych:
 - Character – postać (Id, Name, Status, Species, Gender),
 - Episode – odcinek (Id, Name, EpisodeCode),
