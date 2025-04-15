@@ -1,6 +1,6 @@
 # RickAndMortyMauiApp
 Sprawozdanie – RickAndMortyMauiApp (.NET MAUI + SQLite)
-Opis aplikacji
+
 RickAndMortyMauiApp to aplikacja stworzona w technologii .NET MAUI umożliwiająca:
 - pobieranie postaci z publicznego API Rick and Morty,
 - zapisywanie danych lokalnie w bazie SQLite,
