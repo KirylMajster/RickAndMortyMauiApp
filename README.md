@@ -6,7 +6,7 @@ RickAndMortyMauiApp to aplikacja stworzona w technologii .NET MAUI umożliwiają
 - zapisywanie danych lokalnie w bazie SQLite,
 - przeglądanie, filtrowanie oraz usuwanie postaci.
 
-Aplikacja oparta jest o architekturę MVVM oraz wykorzystuje lokalną bazę danych zbudowaną z pomocą Entity Framework Core.
+Aplikacja wykorzystuje lokalną bazę danych zbudowaną z pomocą Entity Framework Core.
 Struktura bazy danych
 W aplikacji zaimplementowano trzy modele danych:
 - Character – postać (Id, Name, Status, Species, Gender),
